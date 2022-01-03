@@ -1,0 +1,92 @@
+{
+  "ext_des": {
+    "message": "A web browser extension which designed for customizing how to open a link: new tab or current tab."
+  },
+  "ext_name":{
+    "message":"Open Tab"
+  },
+  "deldomain":{
+    "message":"Dont work in this domain"
+  },
+  "delpage":{
+    "message":"Dont work in this page"
+  },
+  "adddomain":{
+    "message":"work in this domain"
+  },
+  "addpage":{
+    "message":"work in this page"
+  },
+  "title_otn":{
+    "message":"Open In New Tab"
+  },  
+  "title_otc":{
+    "message":"Open In Current Tab"
+  },
+  "title_switch":{
+    "message":"Change Work Mode"
+  },
+  "nav_new":{
+    "message":"Open in New Tab"
+  },
+  "nav_current":{
+    "message":"Open in Current Tab"
+  },
+  "nav_about":{
+    "message":"About"
+  },
+  "opt_enable":{
+    "message":"Enable the feature"
+  },
+  "opt_back":{
+    "message":"Open tab in background"
+  },
+  "opt_all":{
+    "message":"Enable for all tabs"
+  },
+  "setnm_settings":{
+    "message":"Settings"
+  },
+  "setnm_rules":{
+    "message":"Rules"
+  },
+  "setnm_log":{
+    "message":"ChangeLog"
+  },
+  "set_domains":{
+    "message":"Domains"
+  },
+  "set_pages":{
+    "message":"Pages"
+  },
+  "btn_save":{
+    "message":"SAVE"
+  },
+  "btn_done":{
+    "message":"DONE"
+  },
+  "about_name":{
+    "message":"Name:"
+  },
+  "about_ver":{
+    "message":"Version:"
+  },
+  "about_mail":{
+    "message":"Feedback:"
+  },
+  "menu_domain":{
+    "message":"Enabled in current domain"
+  },
+  "menu_page":{
+    "message":"Enabled in current page"
+  },
+  "menu_more":{
+    "message":"More Options"
+  },
+  "menu_rate":{
+    "message":"Rate"
+  },
+  "msg_saved":{
+    "message":"The changes have been saved!"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>open tab</title>
+	<link href="../css/popup.css" type="text/css" rel="stylesheet" />
+	<script src="../js/popup.js"></script>
+</head>
+<body>
+	<main>
+		<div class="mode_head"><img class="mode_switch" src="../img/dir.png"><span class="mode_title"></span></div>
+		<div class="action">
+			<ul class="action_ul" id="ul_new">
+				<li><input class="init change" data-confele="enable" type="checkbox" id="ck_enable"><label data-i18n="opt_enable" for="ck_enable"></label></li>
+				<li><input class="init change li_margin" data-confele="back" class="li_margin" id="ck_back" type="checkbox"><label data-i18n="opt_back" for="ck_back" class="label_margin"></label></li>
+				<li><input class="init change li_margin" data-confele="all" class="li_margin" id="ck_all" type="checkbox"><label data-i18n="opt_all" for="ck_all" class="label_margin"></label></li>
+				<li class="line check_hide"></li>
+				<li class="add action_domain check_hide" data-action="adddomain" data-i18n="menu_domain"></li>
+				<li class="add action_page check_hide" data-action="addpage" data-i18n="menu_page"></li>
+			</ul>
+			<ul class="action_ul" id="ul_current" confobj="mode_current">
+				<li><input class="init change" data-confele="enable" type="checkbox" id="enable_current"><label data-i18n="opt_enable" for="enable_current"></label></li>
+				<li><input class="init change li_margin" data-confele="all" class="li_margin" id="all_current" type="checkbox"><label data-i18n="opt_all" for="all_current" class="label_margin"></label></li>
+				<li class="line check_hide"></li>
+				<li class="add action_domain check_hide" data-action="adddomain" data-i18n="menu_domain"></li>
+				<li class="add action_page check_hide" data-action="addpage" data-i18n="menu_page"></li>
+			</ul>
+			<ul class="action_more">
+				<li class="line"></li>
+				<li class="open_opt" data-i18n="menu_more"></li>
+				<li class="open_rate" data-i18n="menu_rate"></li>
+			</ul>
+		</div>
+
+		<div id="mode" style="display:none;">
+			<div class="mode_list"><input type="radio" id="mode_new" value="new" name="mode"><label for="mode_new" data-i18n="nav_new"></label></div>
+			<div class="mode_list"><input type="radio" id="mode_current" value="current" name="mode"><label for="mode_current" data-i18n="nav_current"></label></div>
+			<div class="mode_btn" data-i18n="btn_done"></div>
+		</div>
+	</main>
+</body>
+</html>

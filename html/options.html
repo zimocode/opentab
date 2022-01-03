@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>options</title>
+	<link rel="stylesheet" type="text/css" href="../css/options.css">
+</head>
+<body>
+	<msgbox></msgbox>
+	<nav>
+		<div id="nav">
+			<div id="logo"><img src="../img/icon.png"></div>
+			<ul data-confobj="mode_new|settings">
+				<li class="nav_tab" data-navtab="new" data-i18n="nav_new">Open in new tab</li>
+				<li class="nav_tab" data-navtab="current" data-i18n="nav_current">Open in current tab</li>
+				<li class="nav_tab" data-navtab="about" data-i18n="nav_about">about</li>
+			</ul>			
+		</div>
+	</nav>
+	<main>
+		<div class="tab" data-tab="new">
+			<div class="opt_name" data-i18n="setnm_settings">settings</div>
+			<div class="opt_main" data-confobj="mode_new|settings">
+				<input class="init change" data-confele="enable" id="ck_new_enable" type="checkbox"><label for="ck_new_enable" data-i18n="opt_enable"></label><br />
+				<input  class="init change" data-confele="back" id="ck_new_back" type="checkbox"><label for="ck_new_back" data-i18n="opt_back"></label><br />
+				<input class="init change" data-confele="all" id="ck_new_all" type="checkbox"><label for="ck_new_all" data-i18n="opt_all"></label>
+			</div>
+			<div class="opt_name" data-i18n="setnm_rules">Rules</div>
+			<div class="opt_main">
+				<div class="rule_domain rule_main" data-confobj="mode_new|rule_domain">
+					<div class="rule_title" data-i18n="set_domains">Domains</div>
+					<textarea class="rule_value rule_newdomain"></textarea><br />
+					<button data-i18n="btn_save">save</button>
+				</div>
+				<div class="rule_page rule_main" data-confobj="mode_new|rule_page">
+					<div class="rule_title" data-i18n="set_pages">Pages</div>
+					<textarea class="rule_value rule_newpage"></textarea><br />
+					<button data-i18n="btn_save">SAVE</button>
+				</div>
+			</div>
+		</div>
+		<div class="tab" data-tab="current">
+			<div class="opt_name" data-i18n="setnm_settings">settings</div>
+			<div class="opt_main" data-confobj="mode_current|settings">
+				<input class="init change" data-confele="enable" id="ck_current_enable" type="checkbox"><label for="ck_current_enable" data-i18n="opt_enable">Enable the feature</label><br />
+				<input class="init change" data-confele="all" id="ck_current_all" type="checkbox"><label for="ck_current_all" data-i18n="opt_all">Enable for all tabs</label>
+			</div>
+			<div class="opt_name" data-i18n="setnm_rules">Rules</div>
+			<div class="opt_main">
+				<div class="rule_domain rule_main" data-confobj="mode_current|rule_domain">
+					<div class="rule_title" data-i18n="set_domains">Domains</div>
+					<textarea class="rule_value rule_currentdomain"></textarea><br />
+					<button data-i18n="btn_save">save</button>
+				</div>
+				<div class="rule_page rule_main" data-confobj="mode_current|rule_page">
+					<div class="rule_title" data-i18n="set_pages">Pages</div>
+					<textarea class="rule_value rule_currentpage"></textarea><br />
+					<button data-i18n="btn_save">save</button>
+				</div>
+			</div>
+		</div>
+		<div class="tab" data-tab="about">
+			<div class="opt_name" data-i18n="nav_about">about</div>
+			<div class="opt_main">
+				<div data-i18n="ext_des">des</div>
+				<div><span class="about_title" data-i18n="about_name">name</span><span class="about_content" data-i18n="ext_name">open in tab</span></div>
+				<div><span class="about_title" data-i18n="about_ver">version</span><span class="about_content" id="vernum"></span></div>
+				<div><span class="about_title" data-i18n="about_mail">feedback</span><span class="about_content"><a href="mailto:zimocode@gmail.com?Subject=about%20Open Tab">zimocode@gmail.com</a>, <a href="https://github.com/zimocode/opentab/issues" target="_blank">Issues@github</a></span></div>
+			</div>
+			<div class="opt_name" data-i18n="setnm_log">Changelog</div>
+			<div class="opt_main">
+				<details open="">
+					<summary>1.0.124.124 - 2022.01.03</summary>
+					<ul><li>upgrade to manifest V3</li></ul>
+				</details>
+				<details open="">
+					<summary>0.9.1610.123 - 2015.12.24</summary>
+					<ul><li>first version</li></ul>
+				</details>
+			</div>
+		</div>
+	</main>
+</body>
+	<script src="../js/options.js"></script>
+</html>

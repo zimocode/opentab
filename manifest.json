@@ -1,0 +1,33 @@
+{
+	"manifest_version": 3,
+	"name": "Open Tab",
+	"version": "0.9.1610.123",
+	"description": "__MSG_ext_des__",
+	"default_locale": "en",
+	"icons":{
+		"128": "img/icon.png",
+		"98": "img/icon.png",
+		"48": "img/icon.png"
+	},
+	"action": {
+		"default_icon": {
+			"19": "img/icon.png",
+			"38": "img/icon.png"
+		},
+		"default_title": "Open in new tab",
+		"default_popup": "html/popup.html"
+	},
+	"background": {
+		"service_worker":"js/background.js"
+	},
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [ "js/event.js" ],
+		"match_about_blank": true,
+		"matches": [ "<all_urls>" ],
+		"run_at": "document_start"
+	} ],
+	"options_page": "html/options.html",
+ 	"permissions": ["tabs", "storage" ],
+ 	"host_permissions":["<all_urls>"]
+}
